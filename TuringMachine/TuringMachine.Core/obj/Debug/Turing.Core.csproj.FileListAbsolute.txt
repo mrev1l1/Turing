@@ -3,3 +3,8 @@ D:\Microsoft Visual Studio 2013\TuringMachine\TuringMachine.Core\bin\Debug\Turin
 D:\Microsoft Visual Studio 2013\TuringMachine\TuringMachine.Core\obj\Debug\TuringMachine.Core.dll
 D:\Microsoft Visual Studio 2013\TuringMachine\TuringMachine.Core\obj\Debug\TuringMachine.Core.pdb
 D:\Microsoft Visual Studio 2013\TuringMachine\TuringMachine.Core\obj\Debug\Turing.Core.csprojResolveAssemblyReference.cache
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\obj\Debug\TuringMachine.Core.dll
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\obj\Debug\TuringMachine.Core.pdb
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\bin\Debug\TuringMachine.Core.dll
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\bin\Debug\TuringMachine.Core.pdb
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\obj\Debug\Turing.Core.csprojResolveAssemblyReference.cache

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Turing.Core
 {
-    public class TuringMachine
+    public class TuringMachine : IMachine
     {
         public TuringMachine()
         {
@@ -18,7 +18,7 @@ namespace Turing.Core
             Ribbons = new List<Ribbon>(ribbonNumber);
         }
 
-        public void ExecuteRuleT(Rule rule)
+        public void ExecuteRule(Rule rule)
         {
             bool isRuleBroken = false;
 
@@ -95,7 +95,7 @@ namespace Turing.Core
                 foreach(var rule in Rules)
                 {
                     if (rule.CurrentState.GetState() == CurrentState.GetState())
-                        this.ExecuteRuleT(rule);
+                        this.ExecuteRule(rule);
                 }
             }
 

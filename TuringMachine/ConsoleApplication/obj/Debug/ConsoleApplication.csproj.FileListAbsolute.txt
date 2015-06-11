@@ -6,3 +6,11 @@ D:\Microsoft Visual Studio 2013\TuringMachine\ConsoleApplication\bin\Debug\Turin
 D:\Microsoft Visual Studio 2013\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
 D:\Microsoft Visual Studio 2013\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.exe
 D:\Microsoft Visual Studio 2013\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Debug\TuringMachine.Core.dll
+D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Debug\TuringMachine.Core.pdb
+D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache

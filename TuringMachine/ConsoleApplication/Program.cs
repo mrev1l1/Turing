@@ -23,6 +23,10 @@ namespace ConsoleApplication
             tmrules[0].NextSymbols = new List<char> { '1', '1', 'l' };
             tmrules[0].Shifts = new List<char> { 'R', 'R', 'E' };
 
+            string s = JsonHelper.JsonSerializer<Rule>(tmrules[0]);
+
+            Console.WriteLine(s);
+
             tmrules[1].CurrentState = new State(0);
             tmrules[1].CurrentSymbols = new List<char> { '>', 'l', 'l' };
             tmrules[1].NextState = new State(1);

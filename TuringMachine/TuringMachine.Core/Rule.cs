@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
+
 namespace Turing.Core
 {    
     [Serializable]
@@ -14,7 +17,7 @@ namespace Turing.Core
 
         }
 
-        [XmlArray(ElementName = "CurrentSymbols")]
+        [DataMember]
         public List<char> CurrentSymbols
         {
             get;
@@ -22,7 +25,7 @@ namespace Turing.Core
             set;
         }
 
-        [XmlArray(ElementName = "NewSymbols")]
+        [DataMember]
         public List<char> NextSymbols
         {
             get;
@@ -30,7 +33,7 @@ namespace Turing.Core
             set;
         }
 
-        [XmlArray(ElementName = "PositionShifts")]
+        [DataMember]
         public List<char> Shifts
         {
             get;
@@ -38,7 +41,7 @@ namespace Turing.Core
             set;
         }
 
-        [XmlAttribute]
+        [DataMember]
         public State CurrentState
         {
             get;
@@ -46,7 +49,7 @@ namespace Turing.Core
             set;
         }
         
-        [XmlAttribute]
+        [DataMember]
         public State NextState
         {
             get;
