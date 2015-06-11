@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Turing.Core;
+using System.IO;
 
 namespace ConsoleApplication
 {
@@ -161,6 +162,8 @@ namespace ConsoleApplication
 
             value.Rules = tmrules;
 
+            SaveToFile(tmrules);
+
             Console.WriteLine("Укажите, какое состояние будет конечным:");
 
             value.CurrentState = new State(0);
@@ -180,6 +183,17 @@ namespace ConsoleApplication
             value.DoAlgorithm();
 
             
+        }
+    
+        static void SaveToFile(List<Rule> rules)
+        {
+            using (StreamWriter sw = new StreamWriter("rules.txt"))
+            {
+                foreach (var rule in rules)
+                {
+                    sw.WriteLine(JsonHelper.JsonSerializer<Rule>(rule));
+                }
+            }
         }
     }
 }
