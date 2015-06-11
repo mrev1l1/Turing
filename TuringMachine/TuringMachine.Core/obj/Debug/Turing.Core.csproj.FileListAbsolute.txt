@@ -8,3 +8,8 @@ D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\obj\Debug\TuringMachi
 D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\bin\Debug\TuringMachine.Core.dll
 D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\bin\Debug\TuringMachine.Core.pdb
 D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\obj\Debug\Turing.Core.csprojResolveAssemblyReference.cache
+D:\ПИ-12а\Валенда\Turing\TuringMachine\TuringMachine.Core\bin\Debug\TuringMachine.Core.dll
+D:\ПИ-12а\Валенда\Turing\TuringMachine\TuringMachine.Core\bin\Debug\TuringMachine.Core.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\TuringMachine.Core\obj\Debug\Turing.Core.csprojResolveAssemblyReference.cache
+D:\ПИ-12а\Валенда\Turing\TuringMachine\TuringMachine.Core\obj\Debug\TuringMachine.Core.dll
+D:\ПИ-12а\Валенда\Turing\TuringMachine\TuringMachine.Core\obj\Debug\TuringMachine.Core.pdb

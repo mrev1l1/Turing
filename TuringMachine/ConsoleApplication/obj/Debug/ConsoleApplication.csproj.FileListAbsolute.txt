@@ -14,3 +14,11 @@ D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Debug\ConsoleAppl
 D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Debug\TuringMachine.Core.dll
 D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Debug\TuringMachine.Core.pdb
 D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\bin\Debug\TuringMachine.Core.dll
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\bin\Debug\TuringMachine.Core.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
