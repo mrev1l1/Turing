@@ -8,3 +8,6 @@ D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\obj\Release\ConsoleAp
 D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\obj\Release\ConsoleApplication.pdb
 D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Release\Newtonsoft.Json.dll
 D:\Projects\Turing\Turing\TuringMachine\ConsoleApplication\bin\Release\Newtonsoft.Json.xml
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\bin\Release\ConsoleApplication.exe.config
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\obj\Release\ConsoleApplication.exe
+D:\ПИ-12а\Валенда\Turing\TuringMachine\ConsoleApplication\obj\Release\ConsoleApplication.pdb

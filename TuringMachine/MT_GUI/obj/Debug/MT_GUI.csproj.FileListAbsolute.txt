@@ -1,0 +1,9 @@
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\bin\Debug\MT_GUI.exe.config
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\bin\Debug\MT_GUI.exe
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\bin\Debug\MT_GUI.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\obj\Debug\MT_GUI.csprojResolveAssemblyReference.cache
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\obj\Debug\MT_GUI.Form1.resources
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\obj\Debug\MT_GUI.Properties.Resources.resources
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\obj\Debug\MT_GUI.csproj.GenerateResource.Cache
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\obj\Debug\MT_GUI.exe
+D:\ПИ-12а\Валенда\Turing\TuringMachine\MT_GUI\obj\Debug\MT_GUI.pdb
