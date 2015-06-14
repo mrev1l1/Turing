@@ -1,0 +1,4 @@
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\bin\Release\TuringMachine.Core.dll
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\bin\Release\TuringMachine.Core.pdb
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\obj\Release\TuringMachine.Core.dll
+D:\Projects\Turing\Turing\TuringMachine\TuringMachine.Core\obj\Release\TuringMachine.Core.pdb

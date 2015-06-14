@@ -8,6 +8,6 @@ namespace Turing.Core
 {
     interface IMachine
     {
-        void ExecuteRule(Rule rule);
+        bool ExecuteRule(Rule rule);
     }
 }

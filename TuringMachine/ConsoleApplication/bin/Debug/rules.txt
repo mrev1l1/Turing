@@ -1,0 +1,2 @@
+{"__type":"Rule:#Turing.Core","<CurrentState>k__BackingField":{"__type":"State:#Turing.Core"},"<CurrentSymbols>k__BackingField":["1"],"<NextState>k__BackingField":{"__type":"State:#Turing.Core"},"<NextSymbols>k__BackingField":["2"],"<Shifts>k__BackingField":["R"]}
+{"__type":"Rule:#Turing.Core","<CurrentState>k__BackingField":{"__type":"State:#Turing.Core"},"<CurrentSymbols>k__BackingField":["1"],"<NextState>k__BackingField":{"__type":"State:#Turing.Core"},"<NextSymbols>k__BackingField":["3"],"<Shifts>k__BackingField":["R"]}

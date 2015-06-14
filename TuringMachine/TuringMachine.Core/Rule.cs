@@ -57,9 +57,10 @@ namespace Turing.Core
             set;
         }
 
-        public String ToString()
+        public override string ToString()
         {
-            String Result = 'q'+this.CurrentState.GetState().ToString()+'('+new String(CurrentSymbols.ToArray())+")->q"+this.NextState.GetState().ToString()+'('+new String(NextSymbols.ToArray())+new String(Shifts.ToArray())+')';
+            String Result = 'q' + this.CurrentState.GetState().ToString() + 
+                '('+ new String(CurrentSymbols.ToArray()) + ")->q"+this.NextState.GetState().ToString()+'('+new String(NextSymbols.ToArray())+new String(Shifts.ToArray())+')';
             return Result;
         }
     }

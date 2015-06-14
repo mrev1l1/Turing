@@ -1,0 +1,2 @@
+{"CurrentSymbols":["1"],"NextSymbols":["2"],"Shifts":["R"],"CurrentState":{},"NextState":{}}
+{"CurrentSymbols":["1"],"NextSymbols":["3"],"Shifts":["R"],"CurrentState":{},"NextState":{}}

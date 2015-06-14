@@ -31,5 +31,19 @@ namespace Turing.Core
 
             set;
         }
+
+        public override string ToString()
+        {
+            string s = string.Empty;
+
+            foreach (var c in RibbonString)
+            {
+                s += c.ToString();
+
+                s += " | ";
+            }
+
+            return s;
+        }
     }
 }

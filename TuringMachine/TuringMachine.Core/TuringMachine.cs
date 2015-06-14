@@ -18,7 +18,7 @@ namespace Turing.Core
             Ribbons = new List<Ribbon>(ribbonNumber);
         }
 
-        public void ExecuteRule(Rule rule)
+        public bool ExecuteRule(Rule rule)
         {
             bool isRuleBroken = false;
 
@@ -33,6 +33,8 @@ namespace Turing.Core
                 else
                 {
                     isRuleBroken = true;
+
+                    break;
                 }
             }
 
@@ -42,17 +44,23 @@ namespace Turing.Core
                 {
                     int index = Ribbons[i].CurrentPosition;
 
-                    Ribbons[i].RibbonString[index] = rule.NextSymbols[i];
+                    this.Ribbons[i].RibbonString[index] = rule.NextSymbols[i];
 
                     switch (rule.Shifts[i])
                     {
-                        case 'R': Ribbons[i].CurrentPosition++; break;
-                        case 'L': Ribbons[i].CurrentPosition--; break;
+                        case 'R': this.Ribbons[i].CurrentPosition++; break;
+                        case 'L': this.Ribbons[i].CurrentPosition--; break;
                         case 'E': break;
                     }
                 }
 
                 this.CurrentState = rule.NextState;
+
+                return true;    
+            }
+            else
+            {
+                return false;
             }
         }
 
@@ -86,23 +94,35 @@ namespace Turing.Core
 
         public void DoAlgorithm()
         {
-            //foreach (var rule in Rules)
-            //{
-            //    this.ExecuteRule(rule);
-            //}
-            while(CurrentState.GetState()!=EndState.GetState())
+            while(CurrentState.GetState() != EndState.GetState())
             {
                 foreach(var rule in Rules)
                 {
                     if (rule.CurrentState.GetState() == CurrentState.GetState())
+                    {
                         this.ExecuteRule(rule);
+
+                        this.PrintRibbons();
+
+
+                    }
                 }
             }
-
-            this.ToString();
-
         }
 
+        public void PrintRibbons()
+        {
+            int ribbonNumber = 1;
+
+            foreach (var ribbon in this.Ribbons)
+            {
+                Console.WriteLine(ribbonNumber + " лента:");
+
+                Console.WriteLine(ribbon.ToString());
+            }
+
+            Console.WriteLine();
+        }
         
     }
 }
