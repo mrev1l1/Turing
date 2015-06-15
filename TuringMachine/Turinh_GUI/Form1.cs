@@ -10,6 +10,7 @@ namespace Turinh_GUI
     public partial class Form1 : Form
     {
         private TuringMachine machine;
+        private List<Rule> rules;
 
         public Form1()
         {
@@ -54,7 +55,7 @@ namespace Turinh_GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            List<Rule> rules = new List<Rule>();
+            rules = new List<Rule>();
 
             string s = string.Empty;
 
@@ -64,13 +65,48 @@ namespace Turinh_GUI
                 {
                     Rule rule = JsonConvert.DeserializeObject<Rule>(s);
 
-                    RibbonsContentTextBox.Text += rule.ToString();
+                    RulesTextBox.Text += rule.ToString();
 
-                    RibbonsContentTextBox.Text += Environment.NewLine;
+                    RulesTextBox.Text += Environment.NewLine;
 
                     rules.Add(rule);
                 }
             }
+        }
+
+        private void DoAlgorithmButton_Click(object sender, EventArgs e)
+        {
+            int SelectedCount = Convert.ToInt32(RibbonQuantitySelector.SelectedItem);
+            String[] RibbonsContent = RibbonsContentTextBox.Lines;
+            int ActualCount = RibbonsContent.Length;
+
+            if(ActualCount!=SelectedCount)
+            {
+                //TODO Handle Exception
+            }
+
+            machine.Rules = rules;
+
+            List<Ribbon> Ribbons = new List<Ribbon>();
+            for (int i = 0; i < ActualCount; i++)
+            {
+                Ribbons.Add(new Ribbon(RibbonsContent[i].ToCharArray()));
+            }
+
+            machine.Ribbons = Ribbons;
+            machine.CurrentState = new State(0);
+            machine.EndState = new State(-1);
+
+            for (int i = 0; i < Ribbons.Count; i++)
+                machine.Ribbons[i].CurrentPosition = 1;
+
+            var Result =  machine.DoAlgorithm();
+
+            LogTextBox.Lines = Result.Key.ToArray();
+            LogTextBox.ScrollBars = ScrollBars.Vertical;
+            LogTextBox.ScrollToCaret();
+
+            StepCountLabel.Text = "Потребовалось " + Result.Value.ToString() + " шагов";
         }
     }
 }

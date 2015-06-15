@@ -92,37 +92,52 @@ namespace Turing.Core
             set;
         }
 
-        public void DoAlgorithm()
+        public KeyValuePair<List<String>, int> DoAlgorithm()
         {
-            while(CurrentState.StateNumber != EndState.StateNumber)
+            List<String> Log = new List<string>();
+            Int32 StepCount = 0;
+            KeyValuePair<List<String>, int> Result;
+
+            while(true)
             {
                 foreach(var rule in Rules)
                 {
-                    if (rule.CurrentState.StateNumber == CurrentState.StateNumber)
+                    if (CurrentState.StateNumber != EndState.StateNumber)
                     {
-                        this.ExecuteRule(rule);
-
-                        this.PrintRibbons();
-
-
+                        if (rule.CurrentState.StateNumber == CurrentState.StateNumber)
+                        {
+                            if (this.ExecuteRule(rule))
+                            {
+                                Log.AddRange(this.PrintRibbons());
+                                StepCount++;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Result = new KeyValuePair<List<String>, int>(Log, StepCount);
+                        return Result;
                     }
                 }
             }
         }
 
-        public void PrintRibbons()
+        public List<String> PrintRibbons()
         {
+            List<String> RibbonState = new List<string>();
+            
             int ribbonNumber = 1;
 
             foreach (var ribbon in this.Ribbons)
             {
-                Console.WriteLine(ribbonNumber + " лента:");
+                RibbonState.Add(ribbonNumber + " лента:");
 
-                Console.WriteLine(ribbon.ToString());
+                RibbonState.Add(ribbon.ToString());
+
+                ribbonNumber++;
             }
-
-            Console.WriteLine();
+            RibbonState.Add("");
+            return RibbonState;
         }
-        
     }
 }

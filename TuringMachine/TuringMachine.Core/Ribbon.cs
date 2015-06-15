@@ -13,12 +13,12 @@ namespace Turing.Core
 
         }
 
-        public Ribbon(List<Char> initialRibbon)
+        public Ribbon(Char[] initialRibbon)
         {
             RibbonString = initialRibbon;
         }
 
-        public List<Char> RibbonString
+        public Char[] RibbonString
         {
             get;
 

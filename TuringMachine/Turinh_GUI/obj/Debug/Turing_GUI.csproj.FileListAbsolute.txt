@@ -11,3 +11,16 @@ D:\Projects\Turing\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turinh_GUI.Properti
 D:\Projects\Turing\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turing_GUI.csproj.GenerateResource.Cache
 D:\Projects\Turing\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turinh_GUI.exe
 D:\Projects\Turing\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turinh_GUI.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\bin\Debug\Turinh_GUI.exe.config
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turinh_GUI.exe
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turinh_GUI.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\bin\Debug\Turinh_GUI.exe
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\bin\Debug\Turinh_GUI.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\bin\Debug\Newtonsoft.Json.dll
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\bin\Debug\TuringMachine.Core.dll
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\bin\Debug\TuringMachine.Core.pdb
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\bin\Debug\Newtonsoft.Json.xml
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turing_GUI.csprojResolveAssemblyReference.cache
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turinh_GUI.Form1.resources
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turinh_GUI.Properties.Resources.resources
+D:\ПИ-12а\Валенда\Turing\TuringMachine\Turinh_GUI\obj\Debug\Turing_GUI.csproj.GenerateResource.Cache
