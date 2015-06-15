@@ -1,0 +1,6 @@
+{"CurrentSymbols":["1","*","*"],"NextSymbols":["1","1","*"],"Shifts":["R","L","E"],"CurrentState":{"StateNumber":0},"NextState":{"StateNumber":0}}
+{"CurrentSymbols":[">","*","*"],"NextSymbols":[">","*","*"],"Shifts":["R","L","E"],"CurrentState":{"StateNumber":0},"NextState":{"StateNumber":1}}
+{"CurrentSymbols":["1","1","*"],"NextSymbols":["1","*","*"],"Shifts":["R","L","E"],"CurrentState":{"StateNumber":1},"NextState":{"StateNumber":1}}
+{"CurrentSymbols":["*","1","*"],"NextSymbols":["*","1","1"],"Shifts":["R","L","E"],"CurrentState":{"StateNumber":1},"NextState":{"StateNumber":-1}}
+{"CurrentSymbols":["*","*","*"],"NextSymbols":["*","*","0"],"Shifts":["R","L","E"],"CurrentState":{"StateNumber":1},"NextState":{"StateNumber":-1}}
+{"CurrentSymbols":["1","*","*"],"NextSymbols":["1","*","0"],"Shifts":["R","L","E"],"CurrentState":{"StateNumber":1},"NextState":{"StateNumber":-1}}

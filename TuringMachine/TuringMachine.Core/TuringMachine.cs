@@ -94,11 +94,11 @@ namespace Turing.Core
 
         public void DoAlgorithm()
         {
-            while(CurrentState.GetState() != EndState.GetState())
+            while(CurrentState.StateNumber != EndState.StateNumber)
             {
                 foreach(var rule in Rules)
                 {
-                    if (rule.CurrentState.GetState() == CurrentState.GetState())
+                    if (rule.CurrentState.StateNumber == CurrentState.StateNumber)
                     {
                         this.ExecuteRule(rule);
 

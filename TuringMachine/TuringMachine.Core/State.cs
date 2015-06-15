@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 
 namespace Turing.Core
 {
+    [Serializable]
     public class State
     {
-        private int StateNumber;
-
         public State()
         {
         
@@ -21,9 +22,7 @@ namespace Turing.Core
             this.StateNumber = number;
         }
 
-        public int GetState()
-        {
-            return StateNumber;
-        }
+        [DataMember]
+        public int StateNumber { get; set; }
     }
 }
