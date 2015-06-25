@@ -21,36 +21,92 @@ namespace Turinh_GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Rule rule = new Rule();
+            string[] rulesToSave = RulesTextBox.Lines;
 
-            rule.CurrentState = new State(0);
+            List<Rule> parsedRules = new List<Rule>();
 
-            System.Collections.Generic.List<char> currentSymbols = new System.Collections.Generic.List<char>();
+            foreach (var line in rulesToSave)
+            {
+                if (line.Equals(string.Empty)) continue;
 
-            currentSymbols.Add('a');
+                string[] ruleParts = line.Split('-');
 
-            currentSymbols.Add('b');
+                Rule rule = new Rule();
 
-            rule.CurrentSymbols = currentSymbols;
+                rule = this.ParseRulePart(ruleParts[0], ruleParts[1]);
 
-            rule.NextState = new State(1);
-
-            System.Collections.Generic.List<char> nextSymbols = new System.Collections.Generic.List<char>();
-
-            nextSymbols.Add('b');
-
-            rule.NextSymbols = nextSymbols;
-
-            System.Collections.Generic.List<char> shifts = new System.Collections.Generic.List<char>();
-
-            shifts.Add('R');
-
-            rule.Shifts = shifts;
+                parsedRules.Add(rule);
+            }
 
             using (StreamWriter sw = new StreamWriter("rules.txt"))
             {
-                sw.WriteLine(JsonConvert.SerializeObject(rule));
+                foreach (var rule in rules)
+                {
+                    sw.WriteLine(JsonConvert.SerializeObject(rule));
+                }
             }
+        }
+
+        private Rule ParseRulePart(string s1, string s2)
+        {
+            Rule rule = new Rule();
+
+            bool isShift = false;
+
+            for (int i = 0; i < s1.Length; i++)
+            {
+                if (s1[i].Equals('q'))
+                {
+                    rule.CurrentState = new State((int)Char.GetNumericValue(s1[i + 1]));
+
+                    continue;
+                }
+
+                if (s1[i].Equals('('))
+                {
+                    rule.CurrentSymbols = new List<char>();
+
+                    while (!s1[++i].Equals(')'))
+                    {
+                        rule.CurrentSymbols.Add(s1[i]);
+                    }
+                }
+            }
+
+            for (int i = 0; i < s2.Length; i++)
+            {
+                if (s1[i].Equals('q'))
+                {
+                    rule.NextState = new State((int)Char.GetNumericValue(s2[i + 1]));
+
+                    continue;
+                }
+
+                if (s2[i].Equals('(') && !isShift)
+                {
+                    rule.NextSymbols = new List<char>();
+
+                    isShift = true;
+
+                    while (!s2[++i].Equals(')'))
+                    {
+                        rule.NextSymbols.Add(s2[i]);
+                    }
+                }
+
+                if (isShift)
+                {
+                    ++i;
+                    rule.Shifts = new List<char>();
+
+                    while (!s2[++i].Equals(')'))
+                    {
+                        rule.Shifts.Add(s2[i]);
+                    }
+                }
+            }
+
+            return rule;
         }
 
         private void button2_Click(object sender, EventArgs e)

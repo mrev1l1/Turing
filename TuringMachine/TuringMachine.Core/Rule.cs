@@ -60,8 +60,13 @@ namespace Turing.Core
         public override string ToString()
         {
             String Result = 'q' + this.CurrentState.StateNumber.ToString() + 
-                '('+ new String(CurrentSymbols.ToArray()) + ")->q"+this.NextState.StateNumber.ToString()+'('+new String(NextSymbols.ToArray())+new String(Shifts.ToArray())+')';
+                '('+ new String(CurrentSymbols.ToArray()) + ")-q"+this.NextState.StateNumber.ToString()+'('+new String(NextSymbols.ToArray())+ ')' + '(' +new String(Shifts.ToArray())+')';
             return Result;
+        }
+
+        public static void StringToRule(Rule rule)
+        {
+
         }
     }
 }
